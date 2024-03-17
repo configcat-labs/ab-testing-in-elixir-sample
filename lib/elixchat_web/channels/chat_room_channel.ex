@@ -52,7 +52,7 @@ defmodule ElixchatWeb.ChatRoomChannel do
   defp push_messages(socket) do
     feature_flag_value =
       ConfigCat.get_value(
-        "myfeatureflag",
+        "YOUR-FEATURE-FLAG-KEY",
         false,
         ConfigCat.User.new("user123", email: "john@elixchatbeta.com")
       )
