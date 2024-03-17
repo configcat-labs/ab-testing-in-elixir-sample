@@ -1,0 +1,40 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* This file is for your main application CSS */
+
+.container {
+  max-width: 40rem;
+  min-width: 30rem;
+  margin: 0 auto;
+}
+
+.message-card {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  padding: 1rem 2rem;
+  border-radius: 0.375rem;
+}
+
+.message-card + .message-card {
+  margin-top: 1rem;
+}
+
+.message-preview {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.chat-button-wrapper {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+#chat-button {
+  padding: .5rem 1rem;
+  background-color: rgb(99 102 241);
+  border-radius: 9999px;
+  color: whitesmoke;
+  font-weight: bold;
+}
