@@ -7,8 +7,8 @@ defmodule ConfigSubscriber do
   def on_config_changed(config, pid) do
     # feature_flags = Map.get(config, "f", %{})
 
-    # Find the feature flag with the key "myfeatureflag"
-    my_feature_flag = Map.get(config, "myfeatureflag")
+    # Find the feature flag with the key "enableredchatbutton"
+    my_feature_flag = Map.get(config, "enableredchatbutton")
 
     # Extracting feature flag data
     feature_flag_data = Map.get(my_feature_flag, "v", %{})
